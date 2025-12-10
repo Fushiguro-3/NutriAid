@@ -1,0 +1,13 @@
+food_name,calories,protein,carbs,fat,category
+Oatmeal,150,5,27,3,breakfast
+Idli + Sambar,250,8,40,3,breakfast
+Egg Omelette,200,12,3,16,breakfast
+Rice + Dal,450,12,70,5,lunch
+Roti + Sabji,300,6,45,6,lunch
+Veg Biryani,420,9,65,9,lunch
+Grilled Chicken,400,35,0,10,dinner
+Veg Pulao,350,8,55,8,dinner
+Paneer Curry,380,20,15,22,dinner
+Fruit Bowl,120,2,28,0,snacks
+Nuts Mix,180,6,5,14,snacks
+Protein Shake,150,25,4,3,snacks

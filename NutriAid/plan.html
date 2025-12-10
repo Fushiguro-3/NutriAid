@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Diet Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="plan-page">
+
+  <!-- 🌸 GLOBAL HEADER -->
+  <header class="app-header">
+  <div class="logo">NutriAid</div>
+
+  <div class="header-right">
+    <button id="headerHome" class="header-btn">Home</button>
+    <button id="headerChat" class="header-btn">Chat</button>
+
+    <div class="profile-menu">
+      <img id="profileBtn" class="profile-icon" src="images/user.jpg" />
+      <div class="dropdown" id="profileDropdown">
+        <p id="profileName">Logged in User</p>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- 🌸 CENTER CONTENT -->
+  <div class="plan-container glass-box">
+
+    <h1 class="plan-title">Personalized Diet & BMI Calculator</h1>
+
+    <form id="dietForm" class="plan-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" required>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" class="plan-select" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="activity">Activity Level:</label>
+      <select id="activity" class="plan-select" required>
+        <option value="">Select</option>
+        <option value="low">Sedentary</option>
+        <option value="medium">Moderate</option>
+        <option value="high">Active</option>
+
+      </select>
+
+      <label for="goal">Goal:</label>
+      <select id="goal" class="plan-select" required>
+        <option value="">Select</option>
+        <option value="loss">Weight Loss</option>
+        <option value="gain">Weight Gain</option>
+        <option value="maintain">Maintain Weight</option>
+      </select>
+
+      <button type="submit" class="plan-submit-btn">Generate My Diet Plan</button>
+    </form>
+
+
+    <div id="planResult" class="plan-result"></div>
+
+  </div>
+<script src="./script.js"></script>
+
+</body>
+
+</html>

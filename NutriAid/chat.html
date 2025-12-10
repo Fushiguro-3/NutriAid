@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriAid Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chat-page">
+
+  <!-- 🌸 GLOBAL HEADER -->
+  <header class="app-header">
+    <div class="logo">NutriAid</div>
+
+    <div class="header-right">
+      <!-- IDs now match what script.js expects -->
+      <button id="headerHome" class="header-btn">Home</button>
+      <button id="headerChat" class="header-btn">Chat</button>
+
+      <div class="profile-menu">
+        <img id="profileBtn" class="profile-icon" src="images/user.jpg" />
+        <div class="dropdown" id="profileDropdown">
+          <p id="profileName">Logged in User</p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 💬 CHAT UI -->
+  <main>
+    <h1>NutriAid AI Assistant</h1>
+
+    <div id="chat-container" class="chat-glass-box">
+      <div id="chat-box" class="chat-window">
+        <div class="bot-message">
+          Hi! I'm your NutriAid Assistant.<br>
+          Ask me anything about your diet, calories or fitness!
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+        <button id="sendChat">➤</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

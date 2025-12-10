@@ -1,0 +1,27 @@
+# Python
+backend/__pycache__/
+backend/**/*.pyc
+
+# Virtual env
+backend/venv/
+
+# Environment secrets
+backend/.env
+
+# SQLite DB (optional: you can share sample instead)
+backend/*.db
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Python virtual environment
+NutriAid_Backend/venv/
+
+.env
+*.env
+
+

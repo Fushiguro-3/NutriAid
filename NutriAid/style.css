@@ -1,0 +1,460 @@
+/* -------------------------------------------------- */
+/* 🌸 GLOBAL THEME — LIGHT LAVENDER + GLASS LOOK      */
+/* -------------------------------------------------- */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #f3edff, #e8e2ff);
+  min-height: 100vh;
+  color: #333;
+  padding-top: 80px; 
+}
+
+/* Soft Glass Utility */
+.glass-box {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(140, 110, 243, 0.25);
+}
+
+/* Buttons */
+.btn, button {
+  background: #8C6EF3;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.btn:hover, button:hover {
+  background: #6B4DE6;
+  transform: scale(1.05);
+}
+
+/* -------------------------------------------------- */
+/* 🏠 HOME PAGE                                        */
+/* -------------------------------------------------- */
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Leaves space for header */
+  padding-top: 40px;
+}
+
+
+.home-box {
+  width: 70%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.home-box h1 {
+  color: #6B4DE6;
+  font-size: 2rem;
+}
+
+.button-container button {
+  background-color: #A98EFF;
+}
+
+.button-container button:hover {
+  background-color: #9473FF;
+}
+
+/* ------------------------------------------------------ */
+/* ⭐ PLAN PAGE — CLEAN, CENTERED, PERFECT                */
+/* ------------------------------------------------------ */
+
+.plan-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main card */
+.plan-container {
+  width: 100%;
+  max-width: 520px;
+  margin: 110px auto 40px auto;
+  padding: 30px 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 25px rgba(140, 110, 243, 0.25);
+  box-sizing: border-box;
+}
+
+.plan-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #6B4DE6;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* Form layout */
+.plan-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Input + Select fields (same width, symmetric) */
+.plan-form input,
+.plan-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Center selected text inside the dropdown box */
+.plan-form select {
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+}
+
+/* Try to center options (most browsers obey this) */
+.plan-form select option {
+  text-align: center;
+}
+
+/* Button — matching width + style */
+.plan-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: #8C6EF3;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.plan-form button:hover {
+  background: #6B4DE6;
+  transform: translateY(-2px);
+}
+
+/* Results Box */
+.plan-result {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 0 15px rgba(140,110,243,0.25);
+  display: none;
+}
+
+
+/* ------------------------------------------------------ */
+/* ⭐ HEADER IMPROVEMENTS (Home/Chat on right side)       */
+/* ------------------------------------------------------ */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-btn {
+  background: #A98EFF;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.header-btn:hover {
+  background: #8d6af6;
+}
+
+
+/* -------------------------------------------------- */
+/* 🤖 CHATBOT PAGE                                    */
+/* -------------------------------------------------- */
+
+.chat-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.chat-glass-box {
+  width: 100%;
+  border-radius: 2%;
+  max-width: 480px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(14px);
+}
+
+.chat-window {
+  height: 420px;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* USER bubble */
+.user-message {
+  background: #8C6EF3;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 4px 18px;
+  align-self: flex-end;
+  max-width: 75%;
+}
+
+/* BOT bubble */
+.bot-message {
+  background: rgba(230, 220, 233, 0.75);
+  color: #333;
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px;
+  align-self: flex-start;
+  max-width: 75%;
+}
+
+/* Chat Input */
+.chat-input-area {
+  padding: 12px;
+  border-radius: 2%;
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+}
+
+#sendChat {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #6B4DE6;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------ */
+/* ⭐ GLOBAL HEADER — LAVENDER GLASS + DROPDOWN           */
+/* ------------------------------------------------------ */
+
+/* 🌸 FIXED LAVENDER HEADER — CENTERED & PERFECT ALIGNMENT */
+
+.app-header {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  box-shadow: 0 4px 15px rgba(140, 110, 243, 0.25);
+}
+
+
+/* Logo */
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #6B4DE6;
+}
+
+/* Profile menu container */
+.profile-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 48px;                /* Slightly bigger for better click area */
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  border: 3px solid #b69cff;
+  box-shadow: 0 0 12px rgba(140, 110, 243, 0.35);
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px;                  /* Dropdown appears exactly under icon */
+  right: 0;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+  width: 160px;
+  padding: 10px;
+
+  box-shadow: 0 6px 20px rgba(140, 110, 243, 0.25);
+  display: none;
+}
+
+.dropdown p {
+  margin: 5px 0;
+  text-align: center;
+  color: #4d2ea6;
+  font-weight: 600;
+}
+
+.dropdown button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+
+  background: #8C6EF3;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background: #6B4DE6;
+}
+
+/* Add this so body does not overlap header */
+body {
+  padding-top: 80px !important;
+}
+
+/* -------------------------------------------------- */
+/* 🌸 CLEAN HOME CONTENT (without image card)         */
+/* -------------------------------------------------- */
+
+.home-content {
+  width: 90%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 20px rgba(140, 110, 243, 0.2);
+}
+
+.welcome-text {
+  color: #6B4DE6;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.home-btn {
+  background-color: #A98EFF;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.home-btn:hover {
+  background-color: #8D6AF6;
+  transform: scale(1.05);
+}
+
+.plan-result {
+  display: none;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.plan-result.show {
+  display: block;
+}
+
+.plan-container {
+  overflow: visible !important;
+}
+
+
+
+
+/* 7-day plan layout */
+.week-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.week-day-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 0 12px rgba(140, 110, 243, 0.15);
+}
+
+.week-day-card h4 {
+  margin: 0 0 6px 0;
+  color: #6B4DE6;
+}
+
+.meal-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.macro-line {
+  font-size: 0.8rem;
+  color: #555;
+}
